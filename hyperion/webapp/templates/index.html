@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online CV - Khanya Mvoko</title>
+    <style>
+        /* Basic styling for the entire webpage */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        /* Styling for the header section */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* General styling for all sections */
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        /* Styling for the headers inside sections */
+        h1, h2 {
+            color: #333;
+        }
+        
+        /* Styling for specific sections to add spacing */
+        .contact-info, .skills, .education, .experience {
+            margin-bottom: 20px;
+        }
+
+        /* Styling for forms used in the CV */
+        form {
+            margin-top: 20px;
+        }
+        
+        /* Styling for input fields and text areas in forms */
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Styling for buttons */
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Header section with the main title of the CV -->
+    <h1>Welcome to Khanya Mvoko's CV</h1>
+</header>
+
+<section class="bio">
+    <!-- Section for the bio or introduction -->
+    <h2>About Me</h2>
+    <p>Hello! I'm Khanya Mvoko, a passionate software developer with over 5 years of experience in building web applications. I am particularly interested in full-stack development and have a strong background in creating efficient, scalable, and user-friendly applications.</p>
+    <p>I love problem-solving, learning new technologies, and working on projects that make a difference. My goal is to continue improving my skills while contributing to exciting and impactful projects.</p>
+</section>
+
+<section class="contact-info">
+    <!-- Section displaying contact information -->
+    <h2>Contact Information</h2>
+    <p><strong>Name:</strong> Khanya Mvoko</p>
+    <p><strong>Email:</strong> kaymvokoalo@icloud.com </p>
+    <p><strong>Phone:</strong> 0625339719</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+    <!-- Image section for the user's photo -->
+    <img src=" EC191E72-E44C-459C-8490-D8FFE347D472.JPG">" alt="Khanya Mvoko's Photo" style="width:150px; height:auto;">
+</section>
+
+<section class="skills">
+    <!-- Section highlighting the skills and competencies -->
+    <h2>Skills and Competencies</h2>
+    <ul>
+        <li>Full-stack Web Development</li>
+        <li>JavaScript, HTML, CSS</li>
+        <li>React, Node.js, Express</li>
+        <li>Database Management: MySQL, MongoDB</li>
+        <li>Version Control: Git, GitHub</li>
+    </ul>
+</section>
+
+<section class="education">
+    <!-- Section outlining educational background -->
+    <h2>Education</h2>
+    <p><strong>Degree:</strong> B.Sc. in Computer Science</p>
+    <p><strong>Institution:</strong> XYZ University</p>
+    <p><strong>Year of Graduation:</strong> 2020</p>
+</section>
+
+<section class="experience">
+    <!-- Section detailing work experience -->
+    <h2>Work Experience</h2>
+    <p><strong>Company:</strong> ABC Tech Solutions</p>
+    <p><strong>Role:</strong> Full-stack Developer</p>
+    <p><strong>Duration:</strong> 2020 - Present</p>
+    <p>At ABC Tech Solutions, I worked on multiple web-based projects, leading both frontend and backend development. I collaborated with cross-functional teams to deliver high-quality products on time.</p>
+</section>
+
+<section class="search-form">
+    <!-- Section with a form for searching through the CV content -->
+    <h2>Search My CV</h2>
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Enter a keyword...">
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<section class="contact-form">
+    <!-- Section with a contact form for users to send messages -->
+    <h2>Contact Me</h2>
+    <form action="/submit-feedback" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</body>
+</html>
